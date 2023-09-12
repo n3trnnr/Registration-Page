@@ -1,0 +1,17 @@
+.messenger {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    border: 1px solid black;
+}
+
+div.messenger>aside {
+    width: 30%;
+    height: 100vh;
+    border-right: 1px solid black;
+}
+
+div.messenger>div.dialogues {
+    width: 70%;
+    height: 100vh;
+}

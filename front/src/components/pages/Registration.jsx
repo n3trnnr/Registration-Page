@@ -1,16 +1,16 @@
 import React from "react";
-import '../../styles/main.css'
+import '../../styles/registration.css'
 import { Link } from "react-router-dom";
 
-const Main = () => {
+const Registration = () => {
     return (
-        <main>
+        <div className="registration-wrapper">
             <nav className="navigation">
                 <Link to='/login'>log in</Link>
                 <Link to='/signin'>sign in</Link>
             </nav>
-        </main>
+        </div>
     );
 }
 
-export default Main;
+export default Registration;

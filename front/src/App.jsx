@@ -5,9 +5,11 @@ import Router from './router/Router'
 const App = () => {
 
     return (
-        <BrowserRouter>
-            <Router />
-        </BrowserRouter>
+        <main>
+            <BrowserRouter>
+                <Router />
+            </BrowserRouter>
+        </main>
     )
 
 }

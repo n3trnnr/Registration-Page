@@ -28,7 +28,7 @@ const LogIn = () => {
         }
 
         if (error.length === 0) {
-            navigate('/')
+            navigate('/messenger')
         }
 
         setErrors([...error])
@@ -56,7 +56,7 @@ const LogIn = () => {
                     <input id="password" type="password" placeholder="password" onChange={(event) => { setPassword(event.target.value) }} />
                 </label>
 
-                <button type="submit">submit</button>
+                <button type="submit">send</button>
             </form>
 
             <Link className="btn-back" to='/'>back</Link>

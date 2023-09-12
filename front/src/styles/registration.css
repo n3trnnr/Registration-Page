@@ -1,4 +1,4 @@
-main {
+main>div.registration-wrapper {
     width: 100%;
     height: calc(100vh - 18px);
     display: flex;
@@ -6,7 +6,7 @@ main {
     align-items: center;
 }
 
-main>nav {
+main>div.registration-wrapper>nav {
     width: 50%;
     height: 50%;
     display: flex;
@@ -14,7 +14,7 @@ main>nav {
     align-items: center;
 }
 
-main>nav>a {
+main>div.registration-wrapper>nav>a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +27,6 @@ main>nav>a {
     border-radius: 7px;
 }
 
-main>nav>a:hover {
+main>div.registration-wrapper>nav>a:hover {
     background: rgb(0, 106, 255);
 }
