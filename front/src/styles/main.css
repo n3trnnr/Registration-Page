@@ -1,0 +1,32 @@
+main {
+    width: 100%;
+    height: calc(100vh - 18px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>nav {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main>nav>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background: rgb(0, 0, 255);
+    border-radius: 7px;
+}
+
+main>nav>a:hover {
+    background: rgb(0, 106, 255);
+}
