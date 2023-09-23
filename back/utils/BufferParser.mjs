@@ -1,4 +1,7 @@
 export default class BufferParser {
+
+    static ROOT_PATH = 'D:/Programming/Projects/2023/practice-front-back-react/back'
+
     static bufferParser(req) {
         return new Promise((resolve, reject) => {
             const buffer = []

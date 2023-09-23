@@ -15,9 +15,9 @@ const server = http.createServer(async (req, res) => {
         res.end('')
     } else {
         try {
-            if (await BaseController.post(req, res, '/users')) {
+            if (await BaseController.post(req, res, '/signUp')) {
                 console.log('req.body: ', req.body);
-                await UsersController.getUsers(req, res, req.body)
+                await UsersController.regUser(req, res, req.body)
             }
         }
         catch (error) {

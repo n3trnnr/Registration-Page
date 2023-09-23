@@ -38,7 +38,7 @@ const LogIn = () => {
         <div className="login-form">
             <div className="errors-wrapper">
                 {errors && errors.map((error, id) => (
-                    <div key={`errors_${id}`} className="errors" >
+                    <div key={`errors_${id}`} className="error" >
                         {error}
                     </div>
                 ))}
