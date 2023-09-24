@@ -9,10 +9,6 @@ const LogIn = () => {
     const [errors, setErrors] = useState([])//Массив ошибок для отрисовки на странице
     const navigate = useNavigate()
 
-    // console.log('login', login);
-    // console.log('password', password);
-    // console.log('errors', errors);
-
     const submit = (event) => {
         event.preventDefault()
         setErrors([])
@@ -45,15 +41,15 @@ const LogIn = () => {
             </div>
 
             <form onSubmit={(event) => submit(event)}>
-                <label htmlFor="login">
+                <label >
                     login
-                    <input id="login" type="text" placeholder="login" onChange={(event) => { setLogin(event.target.value) }} />
+                    <input name="login" type="text" placeholder="login" onChange={(event) => { setLogin(event.target.value) }} />
                 </label>
 
 
-                <label htmlFor="password">
+                <label>
                     password
-                    <input id="password" type="password" placeholder="password" onChange={(event) => { setPassword(event.target.value) }} />
+                    <input name="password" type="password" placeholder="password" onChange={(event) => { setPassword(event.target.value) }} />
                 </label>
 
                 <button type="submit">send</button>

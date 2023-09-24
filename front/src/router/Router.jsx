@@ -5,7 +5,6 @@ import Registration from '../components/pages/Registration'
 import Messenger from '../components/pages/Messenger'
 
 const Router = () => {
-
     return (
         <Routes>
             <Route path='/' element={<Registration />} />

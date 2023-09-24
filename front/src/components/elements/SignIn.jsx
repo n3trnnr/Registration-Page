@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import '../../styles/signIn.css'
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignIn = () => {
 
@@ -66,19 +65,19 @@ const SignIn = () => {
                 ))}
             </div>
             <form onSubmit={(event) => submit(event)}>
-                <label htmlFor="login">
+                <label>
                     login
-                    <input type="text" placeholder="login" name="login" onChange={(event) => setLogin(event.target.value)} />
+                    <input name='login' type="text" placeholder="login" onChange={(event) => setLogin(event.target.value)} />
                 </label>
 
-                <label htmlFor="password">
+                <label>
                     password
-                    <input type="password" placeholder="password" name="password" onChange={(event) => setPassword(event.target.value)} />
+                    <input name='password' type="password" placeholder="password" onChange={(event) => setPassword(event.target.value)} />
                 </label>
 
-                <label htmlFor="email">
+                <label>
                     email
-                    <input type="email" placeholder="email" name="email" onChange={(event) => setEmail(event.target.value)} />
+                    <input name='email' autoComplete="on" type="email" placeholder="email" onChange={(event) => setEmail(event.target.value)} />
                 </label>
                 <button>send</button>
                 <Link className="btn-back" to='/'>back</Link>

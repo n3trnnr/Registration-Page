@@ -6,7 +6,9 @@ export default class BaseController {
             return false
         }
 
-        return true
+        if (this.setParams(req, res, path)) {
+            return true
+        }
     }
 
     static async post(req, res, path) {

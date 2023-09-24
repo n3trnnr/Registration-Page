@@ -18,6 +18,8 @@ const server = http.createServer(async (req, res) => {
             if (await BaseController.post(req, res, '/signUp')) {
                 console.log('req.body: ', req.body);
                 await UsersController.regUser(req, res, req.body)
+            } else if (BaseController.get(req, res, '/users')) {
+                await UsersController.getUsers(req, res)
             }
         }
         catch (error) {

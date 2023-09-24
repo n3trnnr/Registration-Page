@@ -2,10 +2,9 @@ import TokensModel from "../models/TokensModel.mjs";
 import UsersModel from "../models/UsersModel.mjs";
 
 export default class UsersController {
-    static async getUsers(req, res, body) {
+    static async getUsers(req, res) {
         try {
-            console.log('controller: ', body);
-            const data = await UsersModel.add(body)
+            const data = await UsersModel.get()
 
             res.statusCode = 200
             res.setHeader('content-type', 'application-json')

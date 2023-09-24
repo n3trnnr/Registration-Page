@@ -1,13 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../../styles/messenger/messenger.css'
 import { Link } from 'react-router-dom';
 import Aside from '../elements/Messenger/Aside';
 import Dialogues from '../elements/Messenger/Dialogues';
+import { useDispatch } from 'react-redux';
+import { getUsers } from '../../store/messenger';
 
 const Messenger = () => {
 
+    const dispatch = useDispatch()
+
     useEffect(() => {
-        console.log('ok');
+        getUsersData()
     }, [])
 
     const getUsersData = async () => {
@@ -17,7 +21,8 @@ const Messenger = () => {
             })
 
             const data = await rawData.json()
-            console.log('data', data);
+            // console.log('data', data);
+            dispatch(getUsers(data))
         }
         catch (error) {
             console.log(error);
